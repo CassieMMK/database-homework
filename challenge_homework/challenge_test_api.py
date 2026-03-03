@@ -1,7 +1,7 @@
 import requests
 import json
 
-API_KEY = "sk-c5a55c5b64bf4092820af619b539d1a3"
+API_KEY = "my_API_KEY"
 
 url = "https://api.deepseek.com/v1/chat/completions"
 
@@ -65,4 +65,5 @@ print("=== DeepSeek V3 ===")
 print(ans_v3)
 
 print("\n=== R1 ===")
+
 print(ans_r1)
