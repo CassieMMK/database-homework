@@ -25,13 +25,13 @@ SELECT room_number
 FROM classroom
 WHERE capacity = (SELECT MAX(capacity) FROM classroom);
 ```
-## R1回答
+## 四、R1回答
 ```sql
 SELECT room_number
 FROM classroom
 WHERE capacity = (SELECT MAX(capacity) FROM classroom);
 ```
-## 结果分析
+## 五、结果分析
 两个模型均采用MAX函数和子查询获取最大容量，并通过WHERE条件筛选对应记录，查询逻辑正确，结果符合教材标准答案。
-## 大模型辅助
+## 六、大模型辅助说明
 本作业在代码编写与文档整理过程中使用了ChatGPT辅助，核心内容由本人理解并核实后完成。
